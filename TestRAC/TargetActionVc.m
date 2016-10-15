@@ -46,6 +46,18 @@
     [[self.btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         [ws.view endEditing:YES];
     }];
+    // label加手势，
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+    [[tap rac_gestureSignal] subscribeNext:^(id x) {
+        ws.lb.text = @"点我干啥";
+    }];
+    [self.lb addGestureRecognizer:tap];
+    // label加手势，
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] init];
+    [[tap1 rac_gestureSignal] subscribeNext:^(id x) {
+        [ws.view endEditing:YES];
+    }];
+    [self.view addGestureRecognizer:tap1];
 }
 
 - (UILabel *)lb {
@@ -55,6 +67,7 @@
         _lb.text = @"请输入";
         _lb.textColor = [UIColor blackColor];
         _lb.font = [UIFont systemFontOfSize:14.f];
+        _lb.userInteractionEnabled = YES;
     }
     return _lb;
 }
@@ -114,8 +127,8 @@
     }
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
-}
+//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [self.view endEditing:YES];
+//}
 
 @end

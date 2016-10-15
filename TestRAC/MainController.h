@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainController : UIViewController
+@interface MainController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *mainTbv;
+
+@property (nonatomic, strong) NSArray *contentArr;
 
 @end

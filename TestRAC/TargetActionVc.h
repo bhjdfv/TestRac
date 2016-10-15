@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum {
+    TypeInStateEnd,
+    TypeInStateInvaild,
+    TypeInStateVaild,
+} TypeInState;
 
 @interface TargetActionVc : UIViewController
 

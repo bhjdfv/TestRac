@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Zhanqi. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MainController.h"
 
-@interface BaseUseController : UIViewController
+@interface BaseUseController : MainController
 
 @end

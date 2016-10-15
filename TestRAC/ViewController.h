@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class RACSignal;
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) RACSignal *siganl;
 
 @end
 

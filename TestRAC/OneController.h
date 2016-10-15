@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class RACSubject;
 @interface OneController : UIViewController
+
+@property (nonatomic, strong) RACSubject *siganl;
 
 @end

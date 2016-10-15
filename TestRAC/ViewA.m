@@ -10,4 +10,9 @@
 
 @implementation ViewA
 
+- (void)btnClicked {
+    [super btnClicked];
+    NSLog(@"A Clicked");
+}
+
 @end

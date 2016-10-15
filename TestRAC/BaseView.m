@@ -20,8 +20,12 @@
 }
 
 - (void)refreshUI:(NSString *)title btnTitle:(NSString *)btnTitle {
-    self.titleLb.text = title;;
-    [self.btn setTitle:btnTitle forState:UIControlStateNormal];
+    if (title) {
+        self.titleLb.text = title;
+    }
+    if (btnTitle) {
+        [self.btn setTitle:btnTitle forState:UIControlStateNormal];
+    }
 }
 
 - (void)_setupSubviews {
@@ -34,6 +38,7 @@
     if (!_titleLb) {
         _titleLb = [[UILabel alloc] init];
         _titleLb.text = @"标签";
+        _titleLb.textAlignment = NSTextAlignmentCenter;
         _titleLb.backgroundColor = [UIColor redColor];
         [self addSubview:_titleLb];
     }

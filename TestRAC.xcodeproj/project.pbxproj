@@ -13,6 +13,8 @@
 		D90F61EA1DB1F7E5008777EB /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90F61E91DB1F7E5008777EB /* MainController.m */; };
 		D90F61ED1DB1FB26008777EB /* BaseUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90F61EC1DB1FB26008777EB /* BaseUseController.m */; };
 		D90F61F01DB1FF2F008777EB /* TargetActionVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D90F61EF1DB1FF2F008777EB /* TargetActionVc.m */; };
+		D90F61F31DB21E70008777EB /* DelegateVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D90F61F21DB21E70008777EB /* DelegateVc.m */; };
+		D90F61F61DB21EFD008777EB /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = D90F61F51DB21EFD008777EB /* ViewC.m */; };
 		D91F15A81DA6A02400B7926E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D91F15A71DA6A02400B7926E /* main.m */; };
 		D91F15AB1DA6A02400B7926E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D91F15AA1DA6A02400B7926E /* AppDelegate.m */; };
 		D91F15AE1DA6A02400B7926E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D91F15AD1DA6A02400B7926E /* ViewController.m */; };
@@ -60,6 +62,10 @@
 		D90F61EC1DB1FB26008777EB /* BaseUseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUseController.m; sourceTree = "<group>"; };
 		D90F61EE1DB1FF2F008777EB /* TargetActionVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetActionVc.h; sourceTree = "<group>"; };
 		D90F61EF1DB1FF2F008777EB /* TargetActionVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetActionVc.m; sourceTree = "<group>"; };
+		D90F61F11DB21E70008777EB /* DelegateVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateVc.h; sourceTree = "<group>"; };
+		D90F61F21DB21E70008777EB /* DelegateVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateVc.m; sourceTree = "<group>"; };
+		D90F61F41DB21EFD008777EB /* ViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewC.h; sourceTree = "<group>"; };
+		D90F61F51DB21EFD008777EB /* ViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewC.m; sourceTree = "<group>"; };
 		D91F15A31DA6A02400B7926E /* TestRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91F15A71DA6A02400B7926E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D91F15A91DA6A02400B7926E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +169,8 @@
 				D90F61EC1DB1FB26008777EB /* BaseUseController.m */,
 				D90F61EE1DB1FF2F008777EB /* TargetActionVc.h */,
 				D90F61EF1DB1FF2F008777EB /* TargetActionVc.m */,
+				D90F61F11DB21E70008777EB /* DelegateVc.h */,
+				D90F61F21DB21E70008777EB /* DelegateVc.m */,
 				D91F15AC1DA6A02400B7926E /* ViewController.h */,
 				D91F15AD1DA6A02400B7926E /* ViewController.m */,
 				D91F15D91DA6AD2300B7926E /* OneController.h */,
@@ -173,6 +181,8 @@
 				D90F61E31DB11B1E008777EB /* ViewA.m */,
 				D90F61E51DB11B27008777EB /* ViewB.h */,
 				D90F61E61DB11B27008777EB /* ViewB.m */,
+				D90F61F41DB21EFD008777EB /* ViewC.h */,
+				D90F61F51DB21EFD008777EB /* ViewC.m */,
 				D91F15B21DA6A02400B7926E /* Assets.xcassets */,
 				D91F15B41DA6A02400B7926E /* LaunchScreen.storyboard */,
 				D9580E1C1DA8F68300E9B8DA /* Data.plist */,
@@ -390,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90F61F61DB21EFD008777EB /* ViewC.m in Sources */,
 				D90F61E41DB11B1E008777EB /* ViewA.m in Sources */,
 				D90F61F01DB1FF2F008777EB /* TargetActionVc.m in Sources */,
 				D91F15DB1DA6AD2300B7926E /* OneController.m in Sources */,
@@ -399,6 +410,7 @@
 				D90F61EA1DB1F7E5008777EB /* MainController.m in Sources */,
 				D91F15AB1DA6A02400B7926E /* AppDelegate.m in Sources */,
 				D91F15A81DA6A02400B7926E /* main.m in Sources */,
+				D90F61F31DB21E70008777EB /* DelegateVc.m in Sources */,
 				D90F61E71DB11B27008777EB /* ViewB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = TestRac/TestRac.pch;
 				INFOPLIST_FILE = TestRAC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameabc.zq.TestRAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -551,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = TestRac/TestRac.pch;
 				INFOPLIST_FILE = TestRAC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameabc.zq.TestRAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

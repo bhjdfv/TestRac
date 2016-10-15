@@ -8,22 +8,35 @@
 
 #import "BaseUseController.h"
 #import "TargetActionVc.h"
+#import "DelegateVc.h"
 
 @implementation BaseUseController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"基本使用";
-    self.contentArr = @[@"target-action",@"代理",@"通知"];    
+    self.contentArr = @[@"封装事件",@"代理",@"通知"];
 }
 
 #pragma mark - TableView Delegate
 // 选中某单元格
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        TargetActionVc *vc = [[TargetActionVc alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+    UIViewController *vc = nil;
+    switch (indexPath.row) {
+        case 0:
+            vc = [[TargetActionVc alloc] init];
+            break;
+        case 1:
+            vc = [[DelegateVc alloc] init];
+            break;
+        case 2:
+            vc = [[UIViewController alloc] init];
+            break;
+        default:
+            break;
     }
+    vc.title = self.contentArr[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

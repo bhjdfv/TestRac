@@ -19,7 +19,6 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"RAC 使用";
     [self setupUI];
 }
 
@@ -73,6 +72,7 @@ static NSString *UITableViewCellID = @"UITableViewCellID";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         BaseUseController *vc = [[BaseUseController alloc] init];
+        vc.title = self.contentArr[indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

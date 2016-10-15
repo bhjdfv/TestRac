@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     MainController *vc = [[MainController alloc] init];
+    vc.title = @"RAC 使用";
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];

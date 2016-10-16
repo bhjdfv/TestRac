@@ -9,13 +9,15 @@
 #import "BaseUseController.h"
 #import "TargetActionVc.h"
 #import "DelegateVc.h"
+#import "NotiVc.h"
+#import "KVOVc.h"
 
 @implementation BaseUseController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"基本使用";
-    self.contentArr = @[@"封装事件",@"代理",@"通知"];
+    self.contentArr = @[@"封装事件",@"代理",@"通知",@"KVO"];
 }
 
 #pragma mark - TableView Delegate
@@ -30,7 +32,10 @@
             vc = [[DelegateVc alloc] init];
             break;
         case 2:
-            vc = [[UIViewController alloc] init];
+            vc = [[NotiVc alloc] init];
+            break;
+        case 3:
+            vc = [[KVOVc alloc] init];
             break;
         default:
             break;

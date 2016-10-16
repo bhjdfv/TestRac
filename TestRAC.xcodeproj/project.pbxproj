@@ -23,6 +23,8 @@
 		D91F15C11DA6A02400B7926E /* TestRACTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D91F15C01DA6A02400B7926E /* TestRACTests.m */; };
 		D91F15CC1DA6A02400B7926E /* TestRACUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D91F15CB1DA6A02400B7926E /* TestRACUITests.m */; };
 		D91F15DB1DA6AD2300B7926E /* OneController.m in Sources */ = {isa = PBXBuildFile; fileRef = D91F15DA1DA6AD2300B7926E /* OneController.m */; };
+		D94959BD1DB3E10C00CF220E /* NotiVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D94959BC1DB3E10C00CF220E /* NotiVc.m */; };
+		D94959C01DB3E77200CF220E /* KVOVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D94959BF1DB3E77200CF220E /* KVOVc.m */; };
 		D9580E1D1DA8F68300E9B8DA /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9580E1C1DA8F68300E9B8DA /* Data.plist */; };
 		D9C2A7BE1DB1199F0042CC8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C2A7BD1DB1199F0042CC8D /* UIKit.framework */; };
 		D9C2A7C01DB119A80042CC8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C2A7BF1DB119A80042CC8D /* Foundation.framework */; };
@@ -83,6 +85,10 @@
 		D91F15CD1DA6A02400B7926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91F15D91DA6AD2300B7926E /* OneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneController.h; sourceTree = "<group>"; };
 		D91F15DA1DA6AD2300B7926E /* OneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneController.m; sourceTree = "<group>"; };
+		D94959BB1DB3E10C00CF220E /* NotiVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiVc.h; sourceTree = "<group>"; };
+		D94959BC1DB3E10C00CF220E /* NotiVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotiVc.m; sourceTree = "<group>"; };
+		D94959BE1DB3E77200CF220E /* KVOVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOVc.h; sourceTree = "<group>"; };
+		D94959BF1DB3E77200CF220E /* KVOVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVc.m; sourceTree = "<group>"; };
 		D9580E1C1DA8F68300E9B8DA /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		D9C2A7BC1DB118700042CC8D /* TestRac.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRac.pch; sourceTree = "<group>"; };
 		D9C2A7BD1DB1199F0042CC8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -171,6 +177,10 @@
 				D90F61EF1DB1FF2F008777EB /* TargetActionVc.m */,
 				D90F61F11DB21E70008777EB /* DelegateVc.h */,
 				D90F61F21DB21E70008777EB /* DelegateVc.m */,
+				D94959BB1DB3E10C00CF220E /* NotiVc.h */,
+				D94959BC1DB3E10C00CF220E /* NotiVc.m */,
+				D94959BE1DB3E77200CF220E /* KVOVc.h */,
+				D94959BF1DB3E77200CF220E /* KVOVc.m */,
 				D91F15AC1DA6A02400B7926E /* ViewController.h */,
 				D91F15AD1DA6A02400B7926E /* ViewController.m */,
 				D91F15D91DA6AD2300B7926E /* OneController.h */,
@@ -400,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94959BD1DB3E10C00CF220E /* NotiVc.m in Sources */,
 				D90F61F61DB21EFD008777EB /* ViewC.m in Sources */,
 				D90F61E41DB11B1E008777EB /* ViewA.m in Sources */,
 				D90F61F01DB1FF2F008777EB /* TargetActionVc.m in Sources */,
@@ -410,6 +421,7 @@
 				D90F61EA1DB1F7E5008777EB /* MainController.m in Sources */,
 				D91F15AB1DA6A02400B7926E /* AppDelegate.m in Sources */,
 				D91F15A81DA6A02400B7926E /* main.m in Sources */,
+				D94959C01DB3E77200CF220E /* KVOVc.m in Sources */,
 				D90F61F31DB21E70008777EB /* DelegateVc.m in Sources */,
 				D90F61E71DB11B27008777EB /* ViewB.m in Sources */,
 			);
